@@ -1,4 +1,4 @@
-# Java 4일차
+# Java_Day_4
 
 ## 반복문(while)
 
