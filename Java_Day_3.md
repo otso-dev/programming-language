@@ -282,3 +282,135 @@ public class Switch1 {
 
 }
 
+## 반복문
+### for문
+package j07_반복;
+
+public class Loop1 {
+
+	public static void main(String[] args) {
+		//지역 변수 = 지역 내에서만 사용가능
+		//전역 변수 = 전역으로 사용가능
+		int sum = 0;
+		
+		for(int i = 0; i < 100; i++) {
+			sum += i + 1; 
+		}
+		System.out.println("1 ~ 100까지 총합: " + sum);
+
+	}
+
+}
+
+package j07_반복;
+
+import java.util.Scanner;
+
+public class Loop2 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int startNumber = 0;
+		int endNumber = 0;
+		int sum = 0;
+		
+		System.out.print("시작 : ");
+		startNumber = scanner.nextInt();
+		
+		System.out.println("끝 : ");
+		endNumber = scanner.nextInt();
+		
+		//내 코드
+		for(int i = 0; i < endNumber + 1; i++) {
+				if(i > startNumber - 1) {
+					sum += i;
+				}
+		}
+		
+		
+		//강사코드
+		for(int i = 0; i < endNumber - startNumber + 1; i++)
+		{
+			sum += i + startNumber;
+		}
+		System.out.println("startNumber ~ endNumber까지 총합: " + sum);
+		//반복횟수를 생각해보자.
+
+	}
+
+}
+
+package j07_반복;
+
+import java.util.Scanner;
+
+public class Loop3 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int count = 0;
+		int sum = 0;
+		int total = 0;
+		System.out.print("반복횟수 : ");
+		count = scanner.nextInt();
+		
+		for(int i = 0; i < count; i++) {
+			int num1 = 0;
+			int num2 = 0;
+			sum = 0;
+			System.out.println( i + 1+"번 반복");
+			System.out.print("a : ");
+			num1 = scanner.nextInt();
+			System.out.print("b : ");
+			num2 = scanner.nextInt();
+			sum = num1 + num2;
+			System.out.println(i + 1 + "번 합 : " + sum);
+			System.out.println();
+			total += sum;
+		}
+		System.out.println("총합 : " + total);
+	}
+
+}
+
+### 별찍기
+
+package j07_반복;
+
+public class Star1 {
+
+	public static void main(String[] args) {
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0; j < i + 1; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0; j < 10 - i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0; j < 9 - i; j++) {
+				System.out.print(" ");
+			}
+			for(int j = 0; j < i + 1; j++) {
+				System.out.print("*");
+			}
+			
+			for(int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+		
+	}
+
+}
+
+
