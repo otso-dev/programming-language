@@ -19,3 +19,14 @@ public class ArrayEx01 {
 	}
 }
 ```
+
+
+## 접근지정자
+
+## public
+
+## proteced
+
+## private
+
+## default
