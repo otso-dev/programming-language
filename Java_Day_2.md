@@ -26,5 +26,44 @@ public class Variable1 {
 ```
 
 ```java
+package j02_변수;
 
+public class Variable2 {
+
+	public static void main(String[] args) {
+		char firstName1 = '가';
+		char firstName2 = '일';
+		
+		char alphabetA = 'A';
+		
+		System.out.println("김" + firstName1 + firstName2);
+		System.out.println("알파벳A: " + alphabetA);
+		
+		System.out.println(alphabetA + 'B');
+		System.out.println(alphabetA);
+		System.out.println("\uAC00");
+		System.out.println(firstName1 + 0);
+
+	}
+
+}
+
+```
+
+```java
+
+package j02_변수;
+
+public class Variable3 {
+
+	public static void main(String[] args) {
+		// 상수: 자료형 앞에 final이 붙는다.
+		// 상수는 상수명을 무조건 대문자로 사용을 한다.
+		final int NOW_AGE = 0;
+		
+		System.out.println(NOW_AGE);
+
+	}
+
+}
 ```
