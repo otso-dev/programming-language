@@ -2,7 +2,7 @@
 # Java_Day_3
 
 ## 입력
-
+```java
 package j05.입력;
 
 import java.util.Scanner;
@@ -30,7 +30,10 @@ public class Input2 {
 	}
 
 }
+```
 
+
+```java
 package j05.입력;
 
 import java.util.Scanner;
@@ -64,7 +67,9 @@ public class Input3 {
 	}
 
 }
+```
 
+```java
 package j05.입력;
 
 import java.util.Scanner;
@@ -110,11 +115,13 @@ public class Input4 {
 	}
 
 }
-
+```
 
 ## 조건문
 
 ### if
+
+```java
 package j06_조건;
 
 public class Conditional1 {
@@ -137,6 +144,9 @@ public class Conditional1 {
 	}
 
 }
+
+```
+```java
 
 package j06_조건;
 
@@ -173,7 +183,9 @@ public class Conditional2 {
 	}
 
 }
+```
 
+```java
 package j06_조건;
 
 import java.util.Scanner;
@@ -255,9 +267,13 @@ public class Conditional3 {
 	}
 
 }
+```
+
 
 ### switch문
 
+
+```java
 package j06_조건;
 
 public class Switch1 {
@@ -282,9 +298,11 @@ public class Switch1 {
 	}
 
 }
-
+```
 ## 반복문
 ### for문
+
+```java
 package j07_반복;
 
 public class Loop1 {
@@ -302,7 +320,9 @@ public class Loop1 {
 	}
 
 }
+```
 
+```java
 package j07_반복;
 
 import java.util.Scanner;
@@ -340,7 +360,9 @@ public class Loop2 {
 	}
 
 }
+```
 
+```java
 package j07_반복;
 
 import java.util.Scanner;
@@ -374,6 +396,9 @@ public class Loop3 {
 	}
 
 }
+````
+
+```java
 
 ### 별찍기
 
@@ -413,5 +438,5 @@ public class Star1 {
 	}
 
 }
-
+```
 
