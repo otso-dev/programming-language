@@ -29,32 +29,32 @@ C, Java, Python
 안정적인 언어이다.(가비지 컬렉터 : 동적 메모리 관리에 따른 쓰레기값 자동수거)
 
 ### 개발환경 
-https://sites.google.com/view/kji-java/index  - jdk
-https://spring.io/tools - spring boot
-jdk 환경변수 설정하기
-JAVA_HOME 새로만들기
-CLASS_PATH 새로만들기
-path 편집
+https://sites.google.com/view/kji-java/index  - jdk  
+https://spring.io/tools - spring boot  
+jdk 환경변수 설정하기  
+JAVA_HOME 새로만들기  
+CLASS_PATH 새로만들기  
+path 편집  
+ 
+cmd로 java버젼 확인하기  
+java파일이 알집이면 jarfix 설치  
+java실행파일 .jar로 시작  
 
-cmd로 java버젼 확인하기
-java파일이 알집이면 jarfix 설치
-java실행파일 .jar로 시작
-
-클래스 이름은 항상 대문자
-혹시 틀렸을시 클릭하고 F2를 누르고 이름을 변경
-
-
-영역 복사 컨틀롤 + 알트 방향키
-
-중복 수정시 알트 + 원하는 곳에 클릭
-
-JVM 자바 가상 기계(자바란 언어를 컴파일 하는 것)
-JDK 자바 개발 환경
-Java Runtime Environment 환경 해당되는 언어를 실행할수있는 환경
-IDE 통합개발환경
+클래스 이름은 항상 대문자  
+혹시 틀렸을시 클릭하고 F2를 누르고 이름을 변경  
 
 
-/code HelloJava
+영역 복사 컨틀롤 + 알트 방향키  
+
+중복 수정시 알트 + 원하는 곳에 클릭  
+
+JVM 자바 가상 기계(자바란 언어를 컴파일 하는 것)  
+JDK 자바 개발 환경  
+Java Runtime Environment 환경 해당되는 언어를 실행할수있는 환경  
+IDE 통합개발환경  
+
+```java
+/code HelloJava  
 package j01_출력;
 
 public class HelloJava { 
@@ -83,7 +83,8 @@ public class HelloJava {
 	}
 
 }
-
+```
+```java
 /code OutPut1
 
 package j01_출력;
@@ -101,7 +102,9 @@ public class OutPut1 {
 	}
 
 }
+```
 
+```java
 
 /code OutPut2
 
@@ -125,10 +128,10 @@ public class OutPut2 {
 	}
 
 }
-
-- 변수와 메모리의 관계
-10진수 0 ~ 9
-2진수 0 ~ 1
-8진수 0 ~ 8
-16진수 0 ~ F
+```
+- 변수와 메모리의 관계  
+10진수 0 ~ 9  
+2진수 0 ~ 1  
+8진수 0 ~ 8  
+16진수 0 ~ F  
 
