@@ -71,7 +71,7 @@ equals 재정의
 원형 HashCode 메소드
 ```java
   public native int hashCode();
-  //해시 알고리즘에 의해 생성된 정수 값입니다.
+  //클래스.hashcode를 하면 클래스의 주소값을 반환한다.
 ```
 HashCode 재정의
 
