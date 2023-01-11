@@ -330,6 +330,8 @@ public class Method2 {
 	}
 }
 ```
+
+## 메소드 
 ```java
 package j08_메소드;
 
