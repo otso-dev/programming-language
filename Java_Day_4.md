@@ -2,6 +2,12 @@
 
 ## 반복문(while)
 
+## while문 흐름도
+![while_흐름도](https://user-images.githubusercontent.com/51119920/211742446-83b0806d-8352-44fb-8a8f-7d694fe92525.png)
+
+
+```java
+
 package j07_반복;
 
 import java.util.Scanner;
@@ -228,9 +234,12 @@ public class Menu {
 	}
 
 }
+```
 
 ## 메소드
 
+
+```java
 package j08_메소드;
 
 public class Method1 {
@@ -267,7 +276,8 @@ public class Method1 {
 		System.out.println(total3);
 	}
 }
-
+```
+```java
 package j08_메소드;
 
 public class Method2 {
@@ -319,7 +329,8 @@ public class Method2 {
 		System.out.println();
 	}
 }
-
+```
+```java
 package j08_메소드;
 
 public class Method3 {
@@ -352,7 +363,7 @@ public class Method3 {
 	}
 
 }
-
+```
 ## 클래스
 
 Java는 객체지향 언어이다.
