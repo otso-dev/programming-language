@@ -348,6 +348,7 @@ public class Conditional3 {
 
 ### switch문
 
+![switch_흐름도](https://user-images.githubusercontent.com/51119920/211743509-48b138fb-f3f3-4235-b6ef-e5644aa9cdfd.png)
 
 ```java
 package j06_조건;
@@ -375,8 +376,13 @@ public class Switch1 {
 
 }
 ```
-## 반복문
-### for문
+## break
+제어문 흐름 중 break 이후의 명령을 실행하지 않고 빠져나온다.
+
+## 반복문(for)
+![for_흐름도](https://user-images.githubusercontent.com/51119920/211743150-2bb8e6b6-b741-4046-8fc6-506489f1febd.png)
+
+## for문
 
 ```java
 package j07_반복;
