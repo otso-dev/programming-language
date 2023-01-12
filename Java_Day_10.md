@@ -279,6 +279,56 @@ public class C {
 }
 
 ```
+## Student Class
+```java
+package j17_스태틱.싱클톤;
+
+public class Student {
+
+	private static final int CODE = 20230000;
+
+	private static int ai = 1; // auto_increment
+
+	private int studentCode;
+	private String name;
+
+	public Student(String name) {
+		studentCode = CODE + ai;
+		ai++;
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [studentCode=" + studentCode + ", name=" + name + "]";
+	}
+
+}
+
+```
+## Main
+
+```java
+package j17_스태틱.싱클톤;
+
+public class Main {
+
+	public static void main(String[] args) {
+		B b = new B();
+		C c = new C();
+
+		for (int i = 0; i < 4; i++) {
+			b.insertStudent();
+		}
+		
+		
+		System.out.println("C에서 학생 전부 출력");
+		c.showAll();
+	}
+
+}
+
+```
 
 ## 제네릭
 ```java
