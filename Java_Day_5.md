@@ -22,7 +22,7 @@ public class ArrayEx01 {
 
 
 ## 접근지정자
-
+클래스내에 멤버변수나 메소드의 접근을 지정하는 키워드이다.
 ## public
 
 ## proteced
