@@ -124,22 +124,23 @@ public class Main {
 - Set
 - Map
 
-- 주요 인터페이스 간의 상속 관계
+## 주요 인터페이스 간의 상속 관계
 ![collection_주요 인터페이스 상속관계](https://user-images.githubusercontent.com/51119920/212228854-a25b374f-4073-489d-b310-86cc9a6b7f48.png)
 
-- 구조
+## 구조
 <List(배열)>  
-  List -> 순서 O, 중복 O
-  ![List구조](https://user-images.githubusercontent.com/51119920/212238879-2ef136c9-d052-4fe2-83db-90c1ae052a66.png)
-<Set(집합)>  -> 순서 X, 중복 X
-  ![Set구조](https://user-images.githubusercontent.com/51119920/212238916-2ca48902-9bc9-498d-97f7-cf17d1ad2344.png)
+  List -> 순서 O, 중복 O  
+  ![List구조](https://user-images.githubusercontent.com/51119920/212238879-2ef136c9-d052-4fe2-83db-90c1ae052a66.png)  
+<Set(집합)>  -> 순서 X, 중복 X  
+  ![Set구조](https://user-images.githubusercontent.com/51119920/212238916-2ca48902-9bc9-498d-97f7-cf17d1ad2344.png)  
 
-<map>  -> Key와 Value   Key -> Set과 같은 구조(순서 X, 중복 X) value -> 중복 O
+<map>   
+Key와 Value   Key -> Set과 같은 구조(순서 X, 중복 X) value -> 중복 O
   ![map의구조](https://user-images.githubusercontent.com/51119920/212238941-c4c9e1a2-7cee-4c75-8819-2856af06b619.png)
 
 ### collection framework
 
-framework -> 틀 안에서 일을 하는 것. (틀 안에서 자유롭게 개발해라)  
+> framework -> 틀 안에서 일을 하는 것. (틀 안에서 자유롭게 개발해라)  
 필요한 이유 -> 각자의 개발 방식이 다를 수 있기때문에 틀을 정해주고 그 안에서 개발을 자유롭게 하기 위해서.  
 collection framework -> java안에서 쓰는 다수의 데이터를 쉽고 표준화된 방법을 제공하는 클래스의 집합을 의미  
 
