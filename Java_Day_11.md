@@ -146,7 +146,7 @@ public class Main {
 
 ### collection framework
 
-> framework -> 틀 안에서 일을 하는 것. (틀 안에서 자유롭게 개발해라)  
+> ***framework*** -> 틀 안에서 일을 하는 것. (틀 안에서 자유롭게 개발해라)  
 필요한 이유 -> 각자의 개발 방식이 다를 수 있기때문에 틀을 정해주고 그 안에서 개발을 자유롭게 하기 위해서.  
 collection framework -> java안에서 쓰는 다수의 데이터를 쉽고 표준화된 방법을 제공하는 클래스의 집합을 의미  
 
