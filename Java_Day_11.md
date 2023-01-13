@@ -128,15 +128,21 @@ public class Main {
 ![collection_주요 인터페이스 상속관계](https://user-images.githubusercontent.com/51119920/212228854-a25b374f-4073-489d-b310-86cc9a6b7f48.png)
 
 ## 구조
-<List(배열)>  
-  List -> 순서 O, 중복 O  
-  ![List구조](https://user-images.githubusercontent.com/51119920/212238879-2ef136c9-d052-4fe2-83db-90c1ae052a66.png)  
-<Set(집합)>  -> 순서 X, 중복 X  
-  ![Set구조](https://user-images.githubusercontent.com/51119920/212238916-2ca48902-9bc9-498d-97f7-cf17d1ad2344.png)  
+### List(배열)  
+ - 순서 O, 중복 O  
 
-<map>   
-Key와 Value   Key -> Set과 같은 구조(순서 X, 중복 X) value -> 중복 O
-  ![map의구조](https://user-images.githubusercontent.com/51119920/212238941-c4c9e1a2-7cee-4c75-8819-2856af06b619.png)
+>![List_구조](https://user-images.githubusercontent.com/51119920/212241237-e357c0d9-12e7-4820-9dc5-e310a25033c1.png)
+
+
+### Set(집합) 
+ - 순서 X, 중복 X  
+>![Set_구조](https://user-images.githubusercontent.com/51119920/212241276-56680343-bc1d-4464-be4b-0b3150e400a0.png)
+
+
+### map   
+ - Key와 Value를 가진다.
+ - Key -> Set과 같은 구조(순서 X, 중복 X) value -> 중복 O
+>![map_구조](https://user-images.githubusercontent.com/51119920/212241391-9aab3b91-1efb-47c8-b63c-b0cc3a66c6f9.png)
 
 ### collection framework
 
