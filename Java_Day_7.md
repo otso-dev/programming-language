@@ -1,64 +1,17 @@
 # Java_Day_7
 
-## 생성자
-RequiredArgsConstructor
-특별한 처리가 필요한 각 필드에 대해 1개의 매개변수가 있는 생성자를 생성합니다.  
-초기화되지 않은 모든 필드는 매개변수를 가져 오며 선언된 곳에서 초기화되지 않은 final것으로 표시된 필드도 가져옵니다 .  
-@NonNull로 표시된 필드 @NonNull의 경우 명시적 null 검사도 생성됩니다. 생성자는 포함 NullPointerException으로 표시된 필드를 위한 매개변수가 있는 경우 를 발생시킵니다 .  
-매개변수의 순서는 클래스에 필드가 나타나는 순서와 일치합니다.  
-
-```java
-package J12_배열.di;
-
-public class Test_A {
-	//값을 주는 방법은 두 가지 생성자의 매개변수와 Setter
-	
-	private final Test_B tb;//final은 상수 그리고 초기화를 무조건 해야함. 프로그램이 돌아가는 와중에 값이 변하지 않아야 하는 값에 final을 붙여준다.
-	
-	public Test_A(Test_B tb) {//생성자에서 변수를 초기화 하거나 생성을 해야하는 것이 좋다. 하지만 Test_B는 Test_A에 의존성이 높고 
-							  //결합도도 높다.
-		this.tb = tb;		  //final을 붙이면 필수 매개변수 생성자 
-	}
-	
-//	public void setTb(Test_B tb) {
-//		this.tb = tb;
-//	}
-	
-	public void testA1() {
-		System.out.println("Test_A1 메소드 호출!");
-		//Test_B tb = new Test_B();
-
-		tb.testB1();
-	}
-
-	public void testA2() {
-		System.out.println("Test_A2 메소드 호출!");
-		//Test_B tb = new Test_B();
-
-		tb.testB1();
-
-	}
-
-}
-
-
-```
-
-
-NoArgsConstructor
-NoArgsConstructor매개변수가 없는 생성자를 생성합니다.  
-이것이 가능하지 않은 경우(final 필드 때문에) 대신 컴파일러 오류가 발생합니다.   
-를 사용하지 않으면 모든 final 필드가 / / @NoArgsConstructor(force = true)로 초기화됩니다.  
-필드와 같이 제약 조건이 있는 필드의 경우 검사 가 생성되지 않으므로 이러한 제약 조건은 일반적으로 해당 필드가 나중에 적절하게 초기화될 때까지 충족되지 않는다는 점에 유의하십시오.   
-최대 절전 모드 및 서비스 제공자 인터페이스와 같은 특정 Java 구성에는 인수 없는 생성자가 필요합니다. 이 주석은 주석을 생성하는 다른 생성자 중 하나 또는 하나와 조합하여 주로 유용합니다  
-
-AllArgsConstructor  
-
-클래스의 각 필드에 대해 1개의 매개변수가 있는 생성자를 생성합니다.   로 표시된 필드는 @NonNull해당 매개변수에 대해 null 검사를 수행합니다.
 ## DI 
-의존성 주입(Dependency Injection)
+>의존성 주입(Dependency Injection)  
+>객체의 생성과 사용을 분리하는 프로그래밍 설계방식이다.  
+>아래의 class 세개가 있다. 만약 A class를 생성할 때 생성자에서 B class를 생성하게 해주고 B class를 생성할 때 C class를  
+>생성해준다면 A B C 간에 B는 A에 의존성도 높고 결합도 또한 높아진다. C class도 마찬가지이다. 왜냐하면 B class를 생성 할려면  
+>A class를 생성해주어야 하기 때문이다. 그래서 의존성과 결합도를 낮추기 위해 DI를 이용한다. 그리고  
+>의존성을 주입하는 이유는 바로 생성과 사용에 대한 관심을 분리하게 되면 생성에 대한 책임을 다른 누군가에 위임할 수 있는 동시에 필요에 따라 객체 생성 방식을 선택할 수 있기 때문입니다. 최종적으로는 객체들이 가지는 강한 결합을 느슨하게 만들 수 있고 이는 설계의 유연성을 부여합니다.
 
 
+
+
+### A class
 ```java
 
 package J12_배열.di;
@@ -94,7 +47,46 @@ public class Test_A {
 
 }
 ```
+### B class
 
+```java
+package J12_배열.di;
+
+public class Test_B {
+	
+	private Test_C tc;
+	
+	public Test_B(Test_C tc) {
+		this.tc = tc;
+	}
+	
+	public void testB1() {
+		System.out.println("\tTest_B1 메소드 호출!");
+
+		tc.testC1();
+	}
+
+}
+
+```
+
+### C class
+
+```java
+package J12_배열.di;
+
+public class Test_C {
+	
+	public void testC1() {
+		System.out.println("\tTest_C1 메소드 호출!");
+	}
+
+}
+
+```
+
+
+### main
 
 ```java
 package J12_배열.di;
@@ -112,62 +104,6 @@ public class Main {
 		ta.testA1();
 		ta.testA2();
 		tb.testB1();
-		
-		
-	}
-}
-
-```
-
-## 2차원 배열
-
-```java
-package J12_배열;
-
-public class DoubleArray1 {
-	
-	public static void main(String[] args) {
-		
-		int num = 0;
-		
-		int [] nums = new int[2];
-		
-		int[][] d_nums = new int[3][2];
-		
-		d_nums[0][0] = 1;
-		d_nums[0][1] = 4;
-		
-		d_nums[1][0] = 2;
-		d_nums[1][1] = 5;
-		
-		d_nums[2][0] = 3;
-		d_nums[2][1] = 6;
-		
-		for(int i = 0; i < 2; i++) {
-			for(int j = 0; j < 3; j++) {
-				System.out.println(d_nums[j][i]);
-				
-			}
-		}
-		
-		int[][] d_nums2 = new int[][] {{1,2,3},{5,6}};
-		
-//		for(int i = 0; i < 2; i++) {
-//			for(int j = 0; j < 3; j++) {
-//				System.out.println(d_nums2[i][j]);
-//				
-//			}
-//		}
-		
-		System.out.println(d_nums2.length);//바깥쪽 길이
-		System.out.println(d_nums2[1].length);//안쪽 길이
-		
-		
-		for(int i = 0; i<d_nums2.length; i++) {
-			for(int j = 0; j < d_nums2[i].length; j++) {
-				System.out.println(d_nums2[i][j]);
-			}
-		}
 		
 		
 	}
