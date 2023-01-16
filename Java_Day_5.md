@@ -2,7 +2,7 @@
 ## Class
 ### User Class
 > User라는 class를 만들고 User에 필요한 변수와 메소드들을 만듬
-```java
+``` java
 package j09_클래스;
 
 public class J09_User {
@@ -25,7 +25,7 @@ public class J09_User {
 ```
 ### UserMain
 >User class 객체를 생성해서 정보를 입력하고 입력된 정보를 User class 안에있는 멤버 메소드 printInfo를 호출함
-```java
+``` java
 package j09_클래스;
 
 public class J09_UserMain {
@@ -89,7 +89,7 @@ public class J09_UserMain {
 동일한 자료형(Data Type)의 데이터를 연속된 공간에 저장하기 위한 자료구조이다. 즉, 연관된 데이터를 그룹화하여 묶어준다고 생각하면 된다. 
 참조형 자료형이다.
 
-```java
+``` java
 public class ArrayEx01 {
 	public static void main(String[] args) {
 		String[] beer = {"Kloud", "Cass", "Asahi", "Guinness", "Heineken"};
