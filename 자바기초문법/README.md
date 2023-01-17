@@ -1,1 +1,1 @@
-# 출력 ~ Class까지
+# 출력 ~ Object Class까지
