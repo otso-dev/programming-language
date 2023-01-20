@@ -4,6 +4,8 @@
 
 쿼리는 명령어를 항상 줄여야함
 
+ 
+
 ## insert 
 ```sql
 select * from student_mst;
@@ -176,4 +178,13 @@ from
 order by
 	mentor_id ,
     student_id desc;/*내리차순 정렬*/
+```
+
+## 공공데이터 연습
+
+``` sql
+likeㅣ
+   %나를% 이 있는 모든것
+    %나를 로 시작하는것
+    나를%로 끝나는 것
 ```
