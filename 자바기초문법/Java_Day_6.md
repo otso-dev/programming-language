@@ -59,7 +59,7 @@ public class DoubleArray1 {
 
 ## User class
 
-### class와  활용한 회원관리 프로그램
+### class를 활용한 회원관리 프로그램
 ```java
 package J12_배열;
 
