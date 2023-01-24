@@ -103,3 +103,23 @@ garbage collection로 동적할당을 한 객체가 소멸할 때 호출이 되�
 getclass()메소드와 똑같은 기능을 하지만 getclass()메소드는 객체를 생성해야지만 쓸 수있다.  
 .class는 객체를 생성하지 않아도 해당 클래스의.class를 붙여주면 해당 클래스의 정보를 확인 할 수 있다.
 equals를 할 때 getclass와 같이 해당 클래스가 일치하는지 안하는지 사용가능하다.
+```java
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj.getClass() == Student.class)) {// instance는 상속관계를 가질 때 문제가 생기기 때문에 사라졌다.
+			return false;
+		}
+
+		Student s = (Student) obj;//다운캐스팅을 할 떄에는 정확하게 타입을 지정해라.
+		boolean result = name.equals(s.name) && age == s.age;
+
+		return result;
+	}
+
+```
+
