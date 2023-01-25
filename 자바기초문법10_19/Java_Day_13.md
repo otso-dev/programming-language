@@ -99,4 +99,9 @@ public class Main {
 ```
 
 ## window bulider
-> 이클립스에서 지원하는 java로 만들 수 있는 GUI툴이다.
+> 이클립스에서 지원하는 java로 만들 수 있는 GUI툴이다.  
+> java GUI툴은 많이 있지만, window builder는 툴 내부적으로  
+> GUI 개발툴을 추가하여 사용 할 수 있다는 점이  가장 큰 장점이다.
+![화면 캡처 2023-01-26 000552](https://user-images.githubusercontent.com/51119920/214598908-0643518d-bd4f-4828-b4c6-0c296b34b874.png)
+
+
