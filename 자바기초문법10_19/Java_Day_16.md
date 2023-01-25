@@ -2,7 +2,14 @@
 
 ## java와 MySQL(DB)연결
 
-### DB
+### DBDBConnectionMgr class
+
+```java
+private String _driver = "com.mysql.cj.jdbc.Driver",
+    _url = "jdbc:mysql://127.0.0.1:3306/chatting",//jdbc의 프로토콜을 의미함 mysql과 통신하겠다. 
+    _user = "root",
+    _password = "root";
+```
 
 
 ### roleinsert class
