@@ -1,5 +1,7 @@
 # Java_Day_12
 
+## List
+
 ## Set
 >set도 list와 똑같은 메소드들을 가지고 있다.  
 set은 get 메소드가 없다. 왜냐하면 set은 키값이 없다.  
