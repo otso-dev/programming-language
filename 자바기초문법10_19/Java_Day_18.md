@@ -18,4 +18,4 @@
 - class 를 만들 때 기준 (비슷한 기능을 가진 method를 기준으로 한다.)
 - ex) service class 주요기능을 가진 class, repostiory -> DB와 연관있음(CRUD)
 - class는 두가지로 나누어짐 1.Entity class(정보를 담은 class)와 주요기능을 method로 만든 class가 있다.
-- constructor -> 생성자
+- constructor -> 생성자는 class가 만들어질때 자동으로 만들어지는 메소드이다.
