@@ -16,3 +16,5 @@
 
 ## python 설치
 - python.org 라는 사이트에 운영체제 맞는 python파일 다운받기(나는 python 3.10.9를 다운 받음)
+## python IDE(VScode,pycham,Jupyter 등등)
+- IDE는 Jupyter를 씀
