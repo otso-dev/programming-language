@@ -30,4 +30,16 @@ for i in gu_set:
 gu_di = dict(zip(gu_key,gu_value))
 print(gu_di)
 
+def fn10(x):
+    return x[1]
+#print(gu_di.items())
+d1_sorted = dict(sorted(gu_di.items(),key = fn10, reverse = False))#dict(sorted(사용할 di,기준이될 key값,정렬순서))
+print(d1_sorted)
+
+```
+
+## 
+
+```python
+
 ```
