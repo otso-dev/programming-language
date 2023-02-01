@@ -118,3 +118,14 @@ for i in range(2,100):
         prime_list.append(i)
 print(prime_list)
 ```
+## lambda
+
+```python
+# python lambda
+def fn1(n):
+    print('value{}'.format(n))
+fn1(5)
+
+#위 함수와 같다
+lambda n: print('value{}.format(n)')
+```
