@@ -86,4 +86,9 @@ a = myclass(100,'def')
 print(a)
 print(type(a))
 a.mymethod1(5)
+
+class myclass2(myclass):
+    pass
+b = myclass2(1)
+b.mymethod1(10)
 ```
