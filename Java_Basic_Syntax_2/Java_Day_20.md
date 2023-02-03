@@ -1,7 +1,7 @@
 # java day 20
 
 ## Function
-```java
+``` java
 //Function <T,R>
 		Function<String, Integer> h = num -> Integer.parseInt(num);
 		
@@ -13,7 +13,7 @@
 
 ## Predicate
 
-```java
+``` java
 Function<Predicate<String>, Boolean> function1 = predeicate -> predeicate.or(str -> str.startsWith("이"))
 				.test("김준일");
 
@@ -29,7 +29,7 @@ Function<Predicate<String>, Boolean> function1 = predeicate -> predeicate.or(str
 
 ## Stream
 
-```java
+``` java
 //Stream -> 일회용
 		Stream<String> stream = nameList.stream().filter(name -> name.startsWith("김"));
 		//stream.forEach(name -> System.out.println(name));
