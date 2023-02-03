@@ -68,11 +68,12 @@ module.myfn1('my module import')
 ## class
 
 ```python
+# python은 java와 같이 소멸자를 따로 할 필요가 없음
 class myclass:
-    myvar1 = 10
+    myvar1 = 10 # class 내부안에서 쓸 수 있는 변수
     myvar2 = 'abc'
     
-    def __init__(self,a = 0,b = 'aaa'):
+    def __init__(self,a = 0,b = 'aaa'): # __는 class내부에서 쓰는 메소드
         self.myvar1 = a
         self.myvar2 = b
     
@@ -87,7 +88,7 @@ print(a)
 print(type(a))
 a.mymethod1(5)
 
-class myclass2(myclass):
+class myclass2(myclass): # class명(상속받을 class명)
     pass
 b = myclass2(1)
 b.mymethod1(10)
