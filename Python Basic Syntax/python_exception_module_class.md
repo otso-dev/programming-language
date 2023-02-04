@@ -93,3 +93,17 @@ class myclass2(myclass): # class명(상속받을 class명)
 b = myclass2(1)
 b.mymethod1(10)
 ```
+## list를 상속받은 myclass
+remove_all 메소드를 만들어서 씀
+```python  
+class mylist(list):
+    def remove_all(self,target_value):
+        while target_value in self:
+            self.remove(target_value)
+        return self
+mylist_1 = mylist(list('abccdc'))
+mylist_1.append(1)
+mylist_1.append(2)
+print(mylist_1)
+print(mylist_1.remove_all('c'))
+```
