@@ -41,6 +41,9 @@ print(key_list)
 print(value_list)
 print(dict2.items()) # zip한 상태
 
+for e in dict2: # key value 같이 조회하기 (dict)
+    print(e, dict2[e])
+
 
 # if: - else:
 # if: -elif: - else:
@@ -81,4 +84,30 @@ print('===========')
 print(x) # str
 print('===========')
 del x # dest
+```
+# file write read
+
+```python
+# file read
+with open('lott.csv') as f:
+    for line in f:
+        pass
+       # print(line)
+        
+# file write
+with open('test.txt','w') as f: # 'w'; mode : 'w'rite / 'r'ead, 'b'inary -> 2진형태
+    for i in range(3, 10):      # 'wb' write binary   
+        f.write('test string{}\n'.format(i))
+        
+import pickle
+list_a = list('abcd')
+
+# write
+with open('pickle_test.pickle','wb') as f:
+    pickle.dump(list_a, f)
+    
+# read
+with open('pickle_test.pickle', 'rb') as f:
+    list_b = pickle.load(f)
+print(list_b)
 ```
