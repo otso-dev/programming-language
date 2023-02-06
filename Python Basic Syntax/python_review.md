@@ -18,6 +18,30 @@ elif isinstance(a,type('')):
     print('datatype:str')
 # list,tuple,set, dictionary
 
+# dictionary : key value
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+
+key_list = list('xyz')
+value_list = [10,20,30]
+x = zip(key_list,value_list) # [('x',10),('y',20),('z',30)]
+dict2 = dict(x)
+print(dict2)
+print(dict2['x'])
+print(dict2.get('x'))
+
+dict2['y'] = 50
+print(dict2)
+
+dict2['newkey'] = 1234
+print(dict2)
+
+key_list = dict2.keys()
+value_list = dict2.values()
+print(key_list)
+print(value_list)
+print(dict2.items()) # zip한 상태
+
+
 # if: - else:
 # if: -elif: - else:
 if '':
