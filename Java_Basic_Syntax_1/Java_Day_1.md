@@ -27,7 +27,7 @@ public class HelloJava {
 		System.out.println("주소 : 부산 동래구 온천동");
 		System.out.println("이름 : 정성현");
 		System.out.print("연락처 : 010-4758-8028"); //print : 줄바꿈 없이 출력
-		System.out.println("수업 : AWS기반 공공빅데이터 활용 웹개발자 양성");
+		System.out.println("웹개발자 양성");
 	}
 
 }
