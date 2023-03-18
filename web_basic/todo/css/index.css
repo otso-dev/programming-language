@@ -1,0 +1,224 @@
+.main-container{
+    margin: 10px auto;
+    width: 550px;
+    height: 100%;
+}
+
+.main-hidden{
+    display: none;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main-title{
+    margin: 20px 0px 0px 20px;
+    font-size: 36px;
+}
+
+.todo-input-container{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #DBDBDB;
+    padding-right: 50px;
+    width: 70%;
+    height: 40px;
+}
+
+.todo-input-container .fa-file-lines{
+    font-size: 20px;
+    margin: 8px;
+}
+
+.todo-input{
+    padding: 0 70px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.todo-input:focus{
+    padding: 10px;
+}
+
+.add-todo-button{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0px;
+
+    border: none;
+    padding: 5px 20px;
+    height: 100%;
+
+}
+
+.todo-content-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 20px;
+    width: 100%;
+    height: 88%;
+    overflow-y: auto;
+}
+
+.content-container{
+    margin: 10px;
+    width: 230px;
+    height: 230px;
+    box-shadow: 0px 0px 5px 1px #DBDBDB;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.content-container:hover{
+    box-shadow: 0px 0px 10px 1px #1D1D1F;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+    padding: 10px;
+    padding-bottom: 5px;
+    height: 20%;
+}
+
+.todo-date{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+.todo-date-time{
+    display: flex;
+    align-items: flex-end;
+    font-size: 11px;
+}
+
+.content-main{
+    padding: 10px;
+    height: 65%;
+    word-break: keep-all;
+    line-height: 25px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-top: 0;
+    height: 15%;
+}
+
+.modify-button, .remove-button{
+    border: none;
+    padding: 5px;
+}
+
+.info-photo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info-photo:hover{
+    /* 투명도 */
+    opacity: 0.8;
+}
+
+.photo-file{
+    display: none;
+}
+
+.info-photo img{
+    width: 100%;
+}
+
+.change-nav{
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+
+    display: none;
+
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #1D1D1FBB;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.info-photo:hover .change-nav{
+    display: block;
+}
+
+.info-main{
+    margin: 30px;
+    padding: 20px;
+}
+
+.info-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.button-hidden{
+    display: none;
+}
+
+.info-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.detail-left, .detail-right{
+    width: 48%;
+}
+
+.info-input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-input-container label{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info-input{
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: #F0E5D3;
+}
+
+.introduce-input{
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    background-color: #F0E5D3;
+}
+
+.info-input:disabled, 
+.introduce-input:disabled{
+    background-color: #FFF;
+}

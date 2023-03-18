@@ -1,0 +1,19 @@
+main article section label{
+    color: blue;
+}
+
+
+main article section > input {
+    border:  3px solid red;
+}
+
+main article section h1 + label{
+    color: #00a70e;
+    font-size: large;
+    font-weight: bold;
+}
+
+main article div h2 ~ label{
+    color: blueviolet;
+    font-weight: bold;
+}

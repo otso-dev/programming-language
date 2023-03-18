@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e3e70;
+    
+}
+.img-night{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #eee;
+    border-radius: 20%;
+
+    overflow: hidden;
+}
+.img-poster{
+    margin:auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #eee;
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+.html-img{
+    width: 100%;
+}
