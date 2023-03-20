@@ -1,7 +1,8 @@
 # programming-language
 
-C/C++  
-JAVA  
-Python
-Javascript
-HTML/CSS
+**C/C++**  
+**JAVA**  
+**Python**  
+**Javascript**  
+**HTML/CSS**  
+ 
