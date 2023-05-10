@@ -1,0 +1,49 @@
+/* @font-face {
+    font-family: 'a';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'b';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil6ExtraBold.woff2') format('woff2');
+    font-style: normal;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Dongle', sans-serif;
+    color: #121212ff;
+}
+
+.description {
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+    color: red;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.main-title {
+    text-align: center;
+    line-height: 10px;
+}
+
+.sub-title {
+    text-align: center;
+    line-height: 10px;
+}
+
+a {
+    border: 1px solid black;
+    text-decoration: none;
+    text-shadow: -1px -1px 0px gray;
+}
+
+ul {
+    list-style-type: decimal;
+}
