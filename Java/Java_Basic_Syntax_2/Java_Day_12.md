@@ -10,6 +10,46 @@ ArrayList는 내부적으로 배열을 이용하여 값을 저장합니다.
 하지만 배열은 크기를 변경할 수 없고 만약 크기를 늘리고자 한다면 새로운 배열을 만들어서 기존의 값들을 옮겨야 하는 과정을 거쳐야 합니다.
 
 요소의 추가 및 삭제 작업에 걸리는 시간이 매우 길어지는 단점을 가지게 됩니다.
+```java
+	package j19_컬렉션;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentArrayList {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		List<Student> students = new ArrayList<>();
+		students.add(new Student("가가가", 1));
+		students.add(new Student("나나나", 2));
+		students.add(new Student("다다다", 3));
+		students.add(new Student("라라라", 4));
+		
+		System.out.println(students);
+		
+		System.out.println("학생이름 입력: ");
+		String searchName = scanner.nextLine();
+
+		
+		boolean flag = true;
+		for(int i = 0; i < students.size(); i++) {
+			Student student = students.get(i);
+				if(student.getName().equals(searchName)) {
+						student.setYear(4);
+						flag = false;
+						break;
+					}
+				}
+				if(flag) {
+					System.out.println("검색 실패!");
+				}
+				System.out.println(students);
+			}	
+}
+
+```
 	
 ## Set
 >set도 list와 똑같은 메소드들을 가지고 있다.  
