@@ -52,7 +52,7 @@ public class OutPut1 {
 }
 ```
 
-```java
+``` java
 
 /code OutPut2
 
