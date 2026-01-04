@@ -1,7 +1,7 @@
 # Language
 
 ## Java
+[Java 정리](https://github.com/otso-dev/programming-language/tree/main/Java)
 
-## Python
-
-## C_C++
+## JavaScript
+[Python 정리](https://github.com/otso-dev/programming-language/tree/main/javascript)
